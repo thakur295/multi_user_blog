@@ -6,8 +6,7 @@ This is a multiuser blog website in which you have to register yourself to add y
 Like or Dislike a blog. In this back-end code is written in python..
 
 #Website on Google cloud Platform
-
-
+https://model-arcadia-157606.appspot.com/blogs
 #Standard Python Libararies Used:Standard Python Libararies Used:
 <ul>
 <li><b>webapp2:</b>Lightweight framework that allows you quickly build simple web applications for the Python 2.7 runtime</li>
