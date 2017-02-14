@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+    {% for blog in blogs %}
+    <a style="display:block" href="/blogpage/{{blog.key().id()}}">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h2><u>{{blog.title}}</u></h2>
+            </div>
+            <div class="col-md-2 text-right" id="add_pad">
+                {{blog.created.strftime("%b %d, %Y")}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <pre class="">{{blog.blog}}</pre>
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+{% endblock %}

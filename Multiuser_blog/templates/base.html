@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body class="img-responsive">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <H1><a href="/blogs">BLOGS</a></H1>
+            </div>
+        </div>
+        <div class="row">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/blogs">Creative Blogs</a>
+                    </div>
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class="active"><a href="/blogs">Home</a></li>
+                        <li><a href="/blogs/addblog">Add Blog</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="float_right"><a href="/Welcome">Welcome <b>{{user}}</b></a></li>
+                        <li class="float_right"><a href="{{link}}">{{login_logout}}</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- <div class="row"> -->
+            {% block content %}
+            {% endblock %}
+        <!-- </div> -->
+    </div>
+</body>
+</html>

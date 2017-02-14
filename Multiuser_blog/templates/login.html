@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <H1>LOG IN</H1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <form class="form-horizontal" method="post">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">User_Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputEmail3" name="username">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword3" name="pass">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12 err">
+                            {{error}}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-8 col-sm-10">
+                            <p>If not registered <a href="/signup">click here</a></p>
+                        </div>
+                        <div class="col-sm-4">
+                            <button type="submit" class="btn btn-default" name="">Sign in</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+{% endblock %}
